@@ -11,6 +11,7 @@ JSONL is convenient for many use cases, but you can adapt the pipeline to produc
 Consider dividing your metadata so that general information goes into a vector database (for semantic searches), while factual information is stored in a knowledge graph. This lets you create relationships between entities, define principal nodes and their properties, and achieve both semantic (vector) and relational (graph) search—sometimes referred to as a “dual search” approach.
 
 # Overall Pipeline Flow
+Now I want to clarify that there is a notebook in which I tested the recommended library. Because table extraction using the unstructured library was not very accurate, it didn’t seem appropriate for delivering chunks. Therefore, I used the Llama Index parser with the free plan and without use of LLMs bucause i wasn´t look neccesary. If you have any suggestions on how to improve the accuracy of table extraction with UNSTRUCTURED, I would be more than happy if you could share them with me.
 
 ## 1) fetch_documents(urls)
 
